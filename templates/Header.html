@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Syed Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        
+    </style>
+  </head>
+  <body>
+<div class="container-fluid">
+        
+    <div class="row">
+        <div class="col-3">
+                <a href="">
+                    <img width="180px" src="https://www.pizzahut.co.in/order/images/logos/logo_wide@x2.38f9109e24d22d58d048837b27f54390.png" alt="">
+                </a>
+        </div>
+        <div class="col-9 text-end pe-3 m-auto">
+                <a href="" class="">
+                    <i class="">Ordering for Collection from Delhi - Manglam Place Rohini       ASAP</i>
+                </a>
+        </div>
+    </div>
+
+</div>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          
+          <li class="nav-item">
+              <a class="nav-link active border" aria-current="page" href="">Deal</a>
+          </li>
+          
+      
+                <li class="nav-item">
+                      <a class="nav-link border">Pizzas</a>
+                      {% comment %} <button type='submit' name='product' value='piza' class='nav-link border' ></button> {% endcomment %}
+                </li>
+
+                <li class="nav-item">
+                      <a class="nav-link border">Melts</a>
+                      {% comment %} <button type='submit' name='product' value='melts' class='nav-link border' >Melts</button> {% endcomment %}
+                </li>
+          
+          <li class="nav-item">
+                <a class="nav-link border " aria-disabled="true" href="">Pastas</a>
+          </li>
+          
+          <li class="nav-item">
+                <a class="nav-link border">Dasserts</a>
+          </li>
+          
+          <li class="nav-item dropdown ">
+            <!-- <a class="nav-link dropdown-toggle border" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Menu
+            </a> -->
+                                {% comment %} <ul class="dropdown-menu">
+                                <li><a class="dropdown-item " href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul> {% endcomment %}
+          </li>
+
+          <li>
+                <div  class="form-check form-switch p-2 border rounded-5 bg-warning">
+                    <form action="" method="POST">
+                        {% csrf_token %}
+
+                        {% comment %} <select name="Veg" id="">
+                            <option >Off</option>
+                            <option >On</option>
+                        </select> {% endcomment %}
+                        
+                      
+                            <input class="form-check-input m-2 text-end" type="checkbox" name="Veg" value="VEG_ON" role="switch" id="flexSwitchCheckDefault" checked>
+                       
+                        <label class="form-check-label p text-end" for="flexSwitchCheckDefault">Veg</label> 
+                        <input type="submit" value='Ok'>
+                    
+                    </form>
+
+                </div>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+</nav>
