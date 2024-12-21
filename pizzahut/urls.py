@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.shortcuts import render,HttpResponse
-
+from home.views import login_page, signup_page
 from home.models import PizzaModel
 
 # def header(check):
@@ -107,5 +107,7 @@ def Home(request):
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',Home),
+    path('login/',login_page, name='login'),
+    path('signup/',signup_page, name='signup'),
 
 ]
