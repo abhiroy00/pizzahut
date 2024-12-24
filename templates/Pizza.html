@@ -1,0 +1,58 @@
+{% include "Header.html" %} 
+
+
+
+<center>
+
+<h1>Pizzas</h1>
+
+
+</center>
+
+
+    <div class="container">
+        <center>
+
+          <div class="row">
+            {% for i in a %}
+
+
+
+           
+
+            <div class="col mb-5">
+                <div class="card" style="width: 16rem;">
+                    <img class="card-img-top" src="{{i.pizzaImage}}" alt="Card image cap">
+                    <div class="card-body m-0 p-0">
+                      <h5 class="card-title">{{i.pizzaName}}</h5>
+                     
+                      <p class="card-text p-0 m-0">
+                            <span align=""> 
+                              <i >Kcal: {{i.pizzaKcal}}</i>
+                            </span>
+                      </p>
+                      <p class="card-text" style='font-family: "Trirong", serif;'>Description : {{i.pizzaDescription}}</p>
+                      <p class="card-text">Size : {{i.pizzaOffer}} <br> Offer Price {{i.pizzaOfferPrice}}</p>
+
+                      <p class="card-text">Rating : {{i.pizzaRetting}}</p>
+                      
+                      <select name="" id="">
+                      <option value="">{{i.SizeList}}</option>
+                      </select>
+                      <select name="" id=""></select>
+                    </div>
+                    
+                    <div class="card-body ">
+                      <button class="btn btn-success w-100">Add to Cart    <span>₹ {{i.pizzaPrice}}</span></button>
+                    </div>
+                  </div>
+            </div>
+
+            {% endfor %}
+        </div>
+
+
+        </center>
+    </div>
+
+  <br><br><br><br><br>
